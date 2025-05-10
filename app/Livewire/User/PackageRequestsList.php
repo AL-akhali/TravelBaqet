@@ -15,5 +15,6 @@ class PackageRequestsList extends Component
 
         return view('livewire.user.package-requests-list', [
             'requests' => $requests,
-        ]);    }
+        ])->layout('layouts.app');
+        }
 }

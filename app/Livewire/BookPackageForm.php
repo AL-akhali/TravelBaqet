@@ -42,8 +42,6 @@ class BookPackageForm extends Component
 
     public function render()
     {
-        // return view('livewire.book-package-form');
-        return view('livewire.book-package-form')->layout('layouts.app'); 
-
+        return view('livewire.book-package-form');
     }
 }
