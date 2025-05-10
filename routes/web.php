@@ -4,7 +4,7 @@ use App\Livewire\PackagesList;
 Route::get('/', PackagesList::class);
 
 // use Illuminate\Support\Facades\Route;
-// use App\Livewire\User\PackageRequestsList;
+use App\Livewire\User\PackageRequestsList;
 use App\Livewire\PackageDetails;
 // use App\Livewire\PackagesList;
 
@@ -24,7 +24,7 @@ Route::view('profile', 'profile')
 Route::get('/package/{id}', PackageDetails::class)->name('package.show');
 
 
-// Route::middleware(['auth'])->group(function () {
-//     Route::get('/myreq', PackageRequestsList::class)->name('user.requests');
-// });
+Route::middleware(['auth'])->group(function () {
+    Route::get('/myreq', PackageRequestsList::class)->name('user.requests');
+});
 // require __DIR__.'/auth.php';

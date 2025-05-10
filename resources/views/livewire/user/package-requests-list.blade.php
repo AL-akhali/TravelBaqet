@@ -1,3 +1,4 @@
+<div>
 <div class="max-w-4xl mx-auto p-6 bg-white shadow rounded-xl mt-10">
     <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">طلباتي</h2>
 
@@ -31,3 +32,4 @@
     </span>
 </div>
 
+</div>
